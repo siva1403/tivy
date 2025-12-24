@@ -12,5 +12,3 @@
           with:
             name: thymeleaf-jar     
             OUTPUT_PATH: tivy/outjar/thymeleafExample-0.0.1-SNAPSHOT.jar
-
-    
