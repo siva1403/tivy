@@ -11,5 +11,12 @@
           uses: actions/upload-artifact@v4
           with:
             name: thymeleaf-jar     
-            OUTPUT_PATH: "GitHub Actions/Trivy/outjar/thymeleafExample-0.0.1-SNAPSHOT.jar-${DATE}.json"
-       
+        - name: Upload JAR artifact
+          uses: actions/upload-artifact@v4
+          with:
+             name: thymeleaf-jar
+             path: GitHub Actions/Trivy/outjar/thymeleafExample-0.0.1-SNAPSHOT.jar-${DATE}.json
+             if-no-files-found: warn
+             compression-level: 6
+             overwrite: false
+             include-hidden-files: false    
