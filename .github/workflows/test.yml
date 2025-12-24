@@ -7,10 +7,6 @@
         - uses: actions/checkout@v2
         - name: Run Dependency Script
           run: bash dep.sh  
-        - name: save jar file 
-          uses: actions/upload-artifact@v4
-          with:
-            name: thymeleaf-jar     
         - name: Upload JAR artifact
           uses: actions/upload-artifact@v4
           with:
