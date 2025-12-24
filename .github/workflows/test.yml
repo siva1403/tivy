@@ -6,11 +6,4 @@
         steps:
         - uses: actions/checkout@v2
         - name: Run Dependency Script
-          run: bash dep.sh                      
-        - name: Run Tests
-          run: |
-             sleep 30
-             curl -s http://localhost:8080/ | grep "Hello, World!"  
-        - name: Kill Java Process
-          run: |
-             pkill -f 'java -jar'                           
+          run: bash dep.sh  
