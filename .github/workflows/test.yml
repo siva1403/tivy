@@ -10,5 +10,5 @@
         - name: Upload JAR artifact
           uses: actions/upload-artifact@v4
           with:
-             name: github-actions-artifact
+             name: my-artifact-${{ github.ref_name }}
              path: /home/runner/.m2/repository/com/work/thymeleaf/work/0.0.1-SNAPSHOT/work-0.0.1-SNAPSHOT.jar
