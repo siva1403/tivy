@@ -7,3 +7,10 @@
         - uses: actions/checkout@v2
         - name: Run Dependency Script
           run: bash dep.sh  
+        - name: save jar file 
+          uses: actions/upload-artifact@v2
+          with:
+            name: thymeleaf-jar     
+            OUTPUT_PATH: tivy/thymeleafExample/target/thymeleafExample-0.0.1-SNAPSHOT.jar
+            
+    
