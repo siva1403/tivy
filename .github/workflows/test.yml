@@ -10,9 +10,6 @@
         - name: Upload JAR artifact
           uses: actions/upload-artifact@v4
           with:
-             name: thymeleaf-jar
-             path: GitHub Actions/thymeleafExample-0.0.1-SNAPSHOT.jar-${DATE}.json
-             if-no-files-found: warn
-             compression-level: 6
-             overwrite: false
-             include-hidden-files: false    
+             name: github-actions-artifact
+             path: thymeleafExample/target/thymeleafExample-0.0.1-SNAPSHOT.jar
+                
