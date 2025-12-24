@@ -11,6 +11,6 @@
           uses: actions/upload-artifact@v4
           with:
             name: thymeleaf-jar     
-            OUTPUT_PATH: tivy/thymeleafExample/target/thymeleafExample-0.0.1-SNAPSHOT.jar
+            OUTPUT_PATH: tivy/outjar/thymeleafExample-0.0.1-SNAPSHOT.jar
 
     
