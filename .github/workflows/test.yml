@@ -11,5 +11,5 @@
           run: mkdir -p "outjar/jarfiles/"
         - name: Upload JAR artifact 
           run: |
-            OUTPUT_FILE="outjar/jarfiles//home/runner/.m2/repository/com/work/thymeleaf/work/0.0.1-SNAPSHOT/work-0.0.1-SNAPSHOT.jar-${DATE}.json"
-            mkdir -p "outjar/jarfiles/"
+            OUTPUT_FILE="outjar/jarfiles//home/runner/.m2/repository/com/work/thymeleaf/work/0.0.1-SNAPSHOT/work-0.0.1-SNAPSHOT.jar"
+            mkdir -p "outjar/jarfiles/" 
